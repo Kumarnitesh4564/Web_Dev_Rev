@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .second {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f0f0f0;
+        transition: all 0.5s ease-in-out; 
+    }
+
+    .s1 {
+        border: 2px solid #1f0b0b;
+        border-radius: 10px;
+        position: absolute;
+        width: 50vw;
+        height: 60vh;
+        left: 25vw;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #5a4242;
+        
+    }
+    input {
+        width: 30vw;
+        height: 5vh;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <div class="second">
+        <img src="https://wallpapers.com/images/featured/harry-potter-desktop-vtho1d6dbpcfzv5v.jpg" alt="Haary Potter"/>
+        <div class="s1">
+            <h2>Connect With Magic</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter Your Email" id="email" name="email" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter Your Password" id="password" name="password" required>
+                <br><br>
+                <input type="submit" value="Connect">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

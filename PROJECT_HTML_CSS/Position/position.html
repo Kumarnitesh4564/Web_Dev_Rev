@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bugatti Veyron</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+
+    height:100vh;
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9EBwPq-dTGRsMMeYaxJ5dZ_UoMED2KOPs8FEwPvQyA&s=10");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    color:white;
+
+}
+
+/* Overlay */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+/* Everything above overlay */
+
+.hero>*{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+/* Navbar */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+}
+
+.logo{
+
+    width:170px;
+
+}
+
+.logo img{
+
+    width:100%;
+
+}
+
+/* Main Content */
+
+.hero-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:75%;
+
+    padding:0 70px;
+
+}
+
+/* Navigation */
+
+nav ul{
+
+    list-style:none;
+
+}
+
+nav li{
+
+    font-size:32px;
+
+    margin:25px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+nav li:hover{
+
+    padding-left:15px;
+
+    color:gold;
+
+}
+
+/* Title */
+
+.title{
+
+    align-self:flex-end;
+
+    margin-bottom:50px;
+
+}
+
+.title h1{
+
+    font-size:70px;
+
+    text-shadow:3px 3px 10px black;
+
+}
+
+/* ================= SECOND SECTION ================= */
+
+.about{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:60px;
+
+    background:#111;
+
+}
+
+/* Text */
+
+.about-text{
+
+    flex:1;
+
+    background:#3d3d3d;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    color:white;
+
+}
+
+.about-text h2{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    line-height:1.8;
+
+    font-size:20px;
+
+}
+
+/* Image */
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero-content{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.title{
+
+    align-self:center;
+
+}
+
+.title h1{
+
+    font-size:45px;
+
+}
+
+.about{
+
+    flex-direction:column;
+
+}
+
+.navbar{
+
+    padding:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO3WVx_rfIFVBg3xGPDjbWTO2nNIRcgNwmEK1K1FIaAg&s=10">
+
+        </div>
+
+        <div class="logo">
+
+            <img src="https://e7.pngegg.com/pngimages/103/771/png-clipart-bugatti-veyron-bugatti-type-46-bugatti-eb-110-car-bugatti-trademark-logo-thumbnail.png">
+
+        </div>
+
+    </header>
+
+    <div class="hero-content">
+
+        <nav>
+
+            <ul>
+
+                <li>Home</li>
+
+                <li>Booking</li>
+
+                <li>Features</li>
+
+                <li>Race</li>
+
+                <li>About</li>
+
+            </ul>
+
+        </nav>
+
+        <div class="title">
+
+            <h1>Bugatti Veyron</h1>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="about-text">
+
+        <h2>Bugatti Veyron</h2>
+
+        <p>
+
+            The Bugatti Veyron is a legendary mid-engine hypercar powered by an
+            8.0-liter quad-turbocharged W16 engine. It became the world's fastest
+            production car by exceeding 250 mph and remains one of the most iconic
+            supercars ever built. Combining luxury, engineering, and unmatched
+            performance, the Veyron changed the automotive world forever.
+
+        </p>
+
+    </div>
+
+    <div class="about-image">
+
+        <img src="https://w0.peakpx.com/wallpaper/58/902/HD-wallpaper-bugatti-veyron-red-sprts-vehicles-car-hot-black-exotics.jpg">
+
+    </div>
+
+</section>
+
+</body>
+</html>
