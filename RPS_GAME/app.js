@@ -28,14 +28,20 @@ const showWinner = (choice1, choice2) => {
               (choice1 === "paper" && choice2 === "scissors") ||
               (choice1 === "scissors" && choice2 === "rock")) 
         {
-            msg.textContent = "Opps! You Lost 😢";
             botScore++;
+            msg.textContent = "Opps! You Lost 😢";
+            msg.classList.add("loss");
+            msg.classList.remove("win");
         }
 
     else {
-        msg.textContent = "Congratulations! You Won 🎉";
         userScore++;
 
+        msg.textContent = "Congratulations! You Won 🎉";
+        msg.classList.add("win");
+        msg.classList.remove("loss");
+        
+        
         celebration.style.display = "flex";
 
         setTimeout(() => {
