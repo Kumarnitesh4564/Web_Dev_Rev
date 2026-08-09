@@ -2,7 +2,9 @@ let userScore = 0;
 let botScore = 0;
 
 const user_score = document.querySelector(".your-score");
-const bot_score = document.querySelector(".bot-score")
+const bot_score = document.querySelector(".bot-score");
+
+const celebration = document.querySelector("#celebration");
 
 
 const choices = document.querySelectorAll(".choice");
@@ -33,6 +35,12 @@ const showWinner = (choice1, choice2) => {
     else {
         msg.textContent = "Congratulations! You Won 🎉";
         userScore++;
+
+        celebration.style.display = "flex";
+
+        setTimeout(() => {
+            celebration.style.display = "none";
+        }, 1500);
     }
 
     user_score.textContent = userScore;
