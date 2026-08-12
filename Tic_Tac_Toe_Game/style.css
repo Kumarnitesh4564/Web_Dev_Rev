@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+}
+
+.msg-container {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    background-color: rgba(15, 23, 42, 0.9);
+}
+
+#msg {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#new-btn {
+    padding: 0.8rem 1.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #3bf67d;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#new-btn:hover {
+    background-color: #2563eb;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    color: #f8fafc;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.game-board {
+    height: 450px;
+    width: 450px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cell {
+    background-color: #f8fafc;
+    border: 2px solid #1e293b;
+
+    cursor: pointer;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0f172a;
+
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #e2e8f0;
+}
+
+#reset-btn {
+    margin-top: 2rem;
+
+    padding: 0.75rem 1.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #f63b57;
+    color: rgb(238, 235, 235);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#reset-btn:hover {
+    background-color: #eb8125;
+    transform: translateY(-2px);
+}
+
+#reset-btn:active {
+    transform: translateY(0);
+}
+
+.player-O {
+    color: #845ec2;
+}
+
+.player-X {
+    color: #4d8076;
+}
